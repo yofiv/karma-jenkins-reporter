@@ -1,23 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Gist
- @longntx
- Sign out
- Watch 1
-  Star 0
- Fork 4 ra100/karma-jenkins-reporter
-forked from actano/karma-jenkins-reporter
- Code  Pull requests 0  Projects 0  Wiki Insights 
-Tree: 834824be92 Find file Copy pathkarma-jenkins-reporter/index.js
-834824b  on Aug 30, 2016
-@ra100 ra100 Fix issue #2 compatibility with node v6+
-6 contributors @vojtajina @timaschew @treyhyde @sylvain-hamel @ra100 @eventualbuddha
-RawBlameHistory      
-157 lines (129 sloc)  4.05 KB
 var os = require('os');
 var path = require('path');
 var fs = require('fs');
@@ -174,5 +154,3 @@ JenkinsReporter.$inject = ['baseReporterDecorator', 'config', 'logger', 'helper'
 module.exports = {
   'reporter:jenkins': ['type', JenkinsReporter]
 };
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
